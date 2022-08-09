@@ -13,7 +13,9 @@ function Switcher() {
   };
 
   return (
-    <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={30} />
+    <div className="md:bg-slate-200 md:hover:bg-slate-300 dark:hover:bg-transparent p-2 dark:bg-transparent md:rounded-md">
+      <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={20} />
+    </div>
   );
 }
 
