@@ -1,3 +1,3 @@
-const getMenu = () => ["About", "Projects", "Contacts"];
+const getMenu = () => ["about", "projects", "contacts"];
 
 export { getMenu };

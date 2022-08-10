@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import CancelIcon from "./icons/CancelIcon";
 import MenuIcon from "./icons/MenuIcon";
-import NavItem from "./navbar/NavItem";
-import ResponsiveNavItem from "./navbar/ResponsiveNavItem";
+import NavItem from "./navitem/NavItem";
+import ResponsiveNavItem from "./navitem/ResponsiveNavItem";
 import Switcher from "./Switcher";
 
 export default function Navbar({ menus }) {
@@ -15,22 +15,22 @@ export default function Navbar({ menus }) {
           mahibarib.
         </a>
 
-        <div className="md:hidden flex items-center gap-2">
+        <div className="flex md:gap-6 gap-2">
+          <div className="md:flex gap-6 items-center font-medium hidden">
+            {menus.map((menu) => (
+              <NavItem key={menu} menu={menu} />
+            ))}
+          </div>
+
           <Switcher />
+
           <button
-            className="cursor-pointer"
+            className="cursor-pointer md:hidden flex items-center"
             type="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             {navbarOpen ? <CancelIcon /> : <MenuIcon />}
           </button>
-        </div>
-
-        <div className="md:flex gap-6 items-center font-medium hidden">
-          {menus.map((menu) => (
-            <NavItem key={menu} menu={menu} />
-          ))}
-          <Switcher />
         </div>
       </div>
 
