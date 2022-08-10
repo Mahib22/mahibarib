@@ -3,7 +3,7 @@ import CancelIcon from "./icons/CancelIcon";
 import MenuIcon from "./icons/MenuIcon";
 import NavItem from "./navitem/NavItem";
 import ResponsiveNavItem from "./navitem/ResponsiveNavItem";
-import Switcher from "./Switcher";
+import Switcher from "./darkmode/Switcher";
 
 export default function Navbar({ menus }) {
   const [navbarOpen, setNavbarOpen] = useState(false);

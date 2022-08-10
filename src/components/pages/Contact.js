@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Home() {
+export default function Contact() {
   return (
     <section className="container px-5 py-24 mx-auto">
       <div className="flex flex-col text-center w-full mb-12">
