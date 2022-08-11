@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CancelIcon from "./icons/CancelIcon";
-import MenuIcon from "./icons/MenuIcon";
+import { CancelIcon, MenuIcon } from "./Icon";
 import NavItem from "./navitem/NavItem";
 import ResponsiveNavItem from "./navitem/ResponsiveNavItem";
 import Switcher from "./darkmode/Switcher";
@@ -17,7 +16,7 @@ export default function Navbar({ menus }) {
         </Link>
 
         <div className="flex md:gap-6 gap-2">
-          <div className="md:flex gap-6 items-center font-medium hidden">
+          <div className="md:flex gap-6 items-center capitalize hidden">
             {menus.map((menu) => (
               <NavItem key={menu} menu={menu} />
             ))}
@@ -41,7 +40,7 @@ export default function Navbar({ menus }) {
           (navbarOpen ? " flex" : " hidden")
         }
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col capitalize text-base dark:text-white w-screen">
           {menus.map((menu) => (
             <ResponsiveNavItem key={menu} menu={menu} />
           ))}

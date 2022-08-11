@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function NavItem({ menu }) {
+  let normalStyle =
+    "hover:underline hover:underline-offset-4 hover:decoration-sky-500 font-medium";
+  let activeStyle = "underline underline-offset-4 decoration-sky-500 font-bold";
+
   return (
-    <Link
+    <NavLink
       to={menu}
-      className="hover:text-sky-500 hover:underline hover:decoration-sky-500 capitalize"
+      className={({ isActive }) => (isActive ? activeStyle : normalStyle)}
     >
       {menu}
-    </Link>
+    </NavLink>
   );
 }
