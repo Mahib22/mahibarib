@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import CancelIcon from "./icons/CancelIcon";
 import MenuIcon from "./icons/MenuIcon";
 import NavItem from "./navitem/NavItem";
@@ -11,9 +12,9 @@ export default function Navbar({ menus }) {
   return (
     <nav>
       <div className="container flex justify-between p-5 mx-auto dark:text-white">
-        <a href="#home" className="font-bold text-3xl">
+        <Link to="/" className="font-bold text-3xl">
           mahibarib.
-        </a>
+        </Link>
 
         <div className="flex md:gap-6 gap-2">
           <div className="md:flex gap-6 items-center font-medium hidden">

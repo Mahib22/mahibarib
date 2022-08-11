@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Project() {
+export default function Projects() {
   return (
     <section className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap -m-4">
