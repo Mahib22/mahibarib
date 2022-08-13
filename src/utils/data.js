@@ -1,3 +1,12 @@
 const getMenu = () => ["about", "projects", "contact"];
 
-export { getMenu };
+const getIdentity = () => ({
+  welcomeText: "Hi! I'm Muhammad Mahib Arib",
+  typeWriterText: [
+    "Web Programmer",
+    "Mobile Programmer",
+    "Freelance Programmer",
+  ],
+});
+
+export { getMenu, getIdentity };
