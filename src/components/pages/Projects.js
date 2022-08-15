@@ -1,110 +1,50 @@
 import React from "react";
+import microtip from "microtip/microtip.css";
+import { ExternalLinkIcon } from "../Icon";
+import TitleSection from "../TitleSection";
 
 export default function Projects() {
   return (
-    <section className="container px-5 py-24 mx-auto">
+    <section className="container px-5 py-8 mx-auto">
+      <TitleSection title="Latest Projects" />
+
       <div className="flex flex-wrap -m-4">
         <div className="p-4 md:w-1/3">
           <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
             <img
-              className="lg:h-48 md:h-36 w-full object-cover object-center"
-              src="https://dummyimage.com/720x400"
+              className="h-48 w-screen object-cover object-center hover:scale-105 transition duration-2000 ease-out"
+              src="https://source.unsplash.com/daily"
               alt="blog"
             />
-            <div className="p-6">
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                CATEGORY
-              </h2>
-              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+
+            <div className="p-4">
+              <h1 className="text-lg font-bold uppercase text-gray-900 dark:text-slate-200 mb-1">
                 The Catalyzer
               </h1>
-              <p className="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                microdosing tousled waistcoat.
-              </p>
-              <div className="flex items-center flex-wrap ">
-                <a
-                  href="#home"
-                  className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                >
-                  Learn More
-                </a>
-                <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                  1.2K
-                </span>
-                <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                  6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-4 md:w-1/3">
-          <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img
-              className="lg:h-48 md:h-36 w-full object-cover object-center"
-              src="https://dummyimage.com/721x401"
-              alt="blog"
-            />
-            <div className="p-6">
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+
+              <h2 className="text-xs font-medium text-gray-400 mb-3">
                 CATEGORY
               </h2>
-              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                The 400 Blows
-              </h1>
-              <p className="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                microdosing tousled waistcoat.
-              </p>
-              <div className="flex items-center flex-wrap">
-                <a
-                  href="#home"
-                  className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                >
-                  Learn More
-                </a>
-                <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                  1.2K
-                </span>
-                <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                  6
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="p-4 md:w-1/3">
-          <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img
-              className="lg:h-48 md:h-36 w-full object-cover object-center"
-              src="https://dummyimage.com/722x402"
-              alt="blog"
-            />
-            <div className="p-6">
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                CATEGORY
-              </h2>
-              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
-                Shooting Stars
-              </h1>
-              <p className="leading-relaxed mb-3">
-                Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
-                microdosing tousled waistcoat.
-              </p>
-              <div className="flex items-center flex-wrap ">
-                <a
-                  href="#home"
-                  className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0"
-                >
-                  Learn More
-                </a>
-                <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                  1.2K
-                </span>
-                <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                  6
-                </span>
+
+              <div className="flex justify-between items-center">
+                <div>
+                  <a
+                    href="#a"
+                    className="text-indigo-400 hover:text-indigo-500 inline-flex items-center underline"
+                  >
+                    Open Link <ExternalLinkIcon />
+                  </a>
+                </div>
+
+                <div className="bg-slate-200 dark:bg-slate-500 px-2 rounded-md inline-flex items-center gap-2">
+                  <p
+                    aria-label="Hey tooltip!"
+                    data-microtip-position="top"
+                    role="tooltip"
+                  >
+                    Logo
+                  </p>
+                </div>
               </div>
             </div>
           </div>
