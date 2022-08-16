@@ -30,12 +30,7 @@ export default function Home({ identity }) {
 
         <div className="lg:w-2/3 mx-auto text-center">
           <p className="dark:text-slate-300 text-slate-800 text-xl leading-relaxed">
-            I am currently a student of informatics engineering at Indraprasta
-            University, PGRI. I have a passion in programming, I'm always on the
-            lookout for new challenges and opportunities to further improve my
-            knowledge and skills. I love coding websites and mobile. I have 3+
-            years experiences in the web development with PHP and Javascript
-            skillset.
+            {identity.descriptionText}
           </p>
         </div>
       </div>

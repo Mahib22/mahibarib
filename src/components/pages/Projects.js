@@ -1,7 +1,9 @@
 import React from "react";
 import microtip from "microtip/microtip.css";
-import { ExternalLinkIcon } from "../Icon";
 import TitleSection from "../TitleSection";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faLaravel } from "@fortawesome/free-brands-svg-icons";
 
 export default function Projects() {
   return (
@@ -32,17 +34,21 @@ export default function Projects() {
                     href="#a"
                     className="text-indigo-400 hover:text-indigo-500 inline-flex items-center underline"
                   >
-                    Open Link <ExternalLinkIcon />
+                    Open Link
+                    <FontAwesomeIcon
+                      icon={faArrowUpRightFromSquare}
+                      className="ml-1"
+                    />
                   </a>
                 </div>
 
                 <div className="bg-slate-200 dark:bg-slate-500 px-2 rounded-md inline-flex items-center gap-2">
                   <p
-                    aria-label="Hey tooltip!"
+                    aria-label="Laravel"
                     data-microtip-position="top"
                     role="tooltip"
                   >
-                    Logo
+                    <FontAwesomeIcon icon={faLaravel} />
                   </p>
                 </div>
               </div>

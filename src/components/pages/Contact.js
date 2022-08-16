@@ -1,32 +1,41 @@
 import React from "react";
-import { DownloadIcon, MailIcon } from "../Icon";
-import GitHub from "../../images/logo/github.png";
-import LinkedIn from "../../images/logo/linkedin.png";
-import Medium from "../../images/logo/medium.png";
-import DevTo from "../../images/logo/dev.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCloudArrowDown,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faDev,
+  faGithub,
+  faLinkedinIn,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
 
-export default function Contact() {
+export default function Contact({ identity }) {
   return (
-    <section className="container px-5 py-12 md:py-28 mx-auto">
+    <section className="container px-5 py-12 md:py-32 mx-auto">
       <div className="lg:w-2/3 mx-auto text-center">
         <p className="dark:text-slate-300 text-slate-800 text-xl">
-          I am currently looking for a freelance or part time job. If you see me
-          as a good fit, feel free to contact me. Let's work together!
+          {identity.contactText}
         </p>
 
         <div className="lg:inline-flex lg:items-center gap-2 mt-2">
           <a
-            href="mailto:mahib.arib@gmail.com"
+            href={"mailto:" + identity.socialLink.mail}
             className="inline-flex items-center bg-slate-200 dark:bg-slate-600 dark:text-slate-300 text-slate-800 hover:bg-sky-200 dark:hover:bg-sky-700 px-4 py-1 rounded-full mt-2"
           >
-            <MailIcon />
-            <p className="text-xl font-bold">mahib.arib@gmail.com</p>
+            <FontAwesomeIcon icon={faEnvelope} size="lg" className="mr-2" />
+            <p className="text-xl font-bold">{identity.socialLink.mail}</p>
           </a>
           <a
-            href="#a"
+            href={identity.socialLink.resume}
             className="inline-flex items-center bg-slate-200 dark:bg-slate-600 dark:text-slate-300 text-slate-800 hover:bg-sky-200 dark:hover:bg-sky-700 px-4 py-1 rounded-full mt-2"
           >
-            <DownloadIcon />
+            <FontAwesomeIcon
+              icon={faCloudArrowDown}
+              size="lg"
+              className="mr-2"
+            />
             <p className="text-xl font-bold">Download CV</p>
           </a>
         </div>
@@ -35,34 +44,38 @@ export default function Contact() {
           Follow me on
         </p>
 
-        <div className="flex justify-around mt-2 dark:bg-slate-300 py-2 md:w-1/3 mx-auto rounded-lg">
+        <div className="flex justify-around mt-2 mx-auto dark:text-white md:w-1/3">
           <a
-            href="https://github.com/Mahib22"
+            href={identity.socialLink.github}
             target={"_blank"}
             rel="noopener noreferrer"
+            className="hover:text-sky-700"
           >
-            <img src={GitHub} alt="github" className="h-10" />
+            <FontAwesomeIcon icon={faGithub} size="2xl" />
           </a>
           <a
-            href="https://www.linkedin.com/in/mahib-arib"
+            href={identity.socialLink.linkedin}
             target={"_blank"}
             rel="noopener noreferrer"
+            className="hover:text-sky-700"
           >
-            <img src={LinkedIn} alt="linkedin" className="h-10" />
+            <FontAwesomeIcon icon={faLinkedinIn} size="2xl" />
           </a>
           <a
-            href="https://mahib-arib.medium.com"
+            href={identity.socialLink.medium}
             target={"_blank"}
             rel="noopener noreferrer"
+            className="hover:text-sky-700"
           >
-            <img src={Medium} alt="medium" className="h-10" />
+            <FontAwesomeIcon icon={faMedium} size="2xl" />
           </a>
           <a
-            href="https://dev.to/mahib22"
+            href={identity.socialLink.devto}
             target={"_blank"}
             rel="noopener noreferrer"
+            className="hover:text-sky-700"
           >
-            <img src={DevTo} alt="devto" className="h-10" />
+            <FontAwesomeIcon icon={faDev} size="2xl" />
           </a>
         </div>
       </div>

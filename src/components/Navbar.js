@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { CancelIcon, MenuIcon } from "./Icon";
 import NavItem from "./navitem/NavItem";
 import ResponsiveNavItem from "./navitem/ResponsiveNavItem";
 import Switcher from "./darkmode/Switcher";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar({ menus }) {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -29,14 +30,18 @@ export default function Navbar({ menus }) {
             type="button"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
-            {navbarOpen ? <CancelIcon /> : <MenuIcon />}
+            {navbarOpen ? (
+              <FontAwesomeIcon icon={faXmark} size="xl" />
+            ) : (
+              <FontAwesomeIcon icon={faBars} size="lg" />
+            )}
           </button>
         </div>
       </div>
 
       <div
         className={
-          "bg-slate-100 dark:bg-slate-800 md:hidden" +
+          "bg-slate-100 dark:bg-slate-800 md:hidden absolute h-screen z-50" +
           (navbarOpen ? " flex" : " hidden")
         }
       >
