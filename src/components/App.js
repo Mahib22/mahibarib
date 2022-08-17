@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
-import { getMenu, getIdentity, getIcon } from "../utils/data";
+import { getMenu, getIdentity } from "../utils/data";
 import Home from "./pages/Home";
 import Footer from "./Footer";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
+import getSkillIcon from "../utils/skill";
+import getPortfolios from "../utils/portfolio";
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +17,8 @@ class App extends Component {
     this.state = {
       menus: getMenu(),
       identity: getIdentity(),
-      getSkills: getIcon(),
+      getSkills: getSkillIcon(),
+      portfolios: getPortfolios(),
     };
   }
 
@@ -29,7 +32,10 @@ class App extends Component {
             path="skills"
             element={<Skills getSkills={this.state.getSkills} />}
           />
-          <Route path="projects" element={<Projects />} />
+          <Route
+            path="projects"
+            element={<Projects portfolios={this.state.portfolios} />}
+          />
           <Route
             path="contact"
             element={<Contact identity={this.state.identity} />}

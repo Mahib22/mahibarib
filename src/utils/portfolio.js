@@ -1,0 +1,60 @@
+const getPortfolios = () => [
+  {
+    id: 7,
+    title: "image gallery",
+    subTitle: "Front End",
+    img: "images/project/image-gallery.png",
+    link: "https://github.com/Mahib22/react-gallery",
+    techStack: ["react", "tailwind"],
+  },
+  {
+    id: 6,
+    title: "notes app",
+    subTitle: "Front End",
+    img: "images/project/notes-app.png",
+    link: "https://github.com/Mahib22/react-notes-app",
+    techStack: ["react", "tailwind"],
+  },
+  {
+    id: 5,
+    title: "instamini",
+    subTitle: "Full Stack",
+    img: "images/project/instamini.png",
+    link: "https://github.com/Mahib22/instamini",
+    techStack: ["laravel", "mysql", "bootstrap"],
+  },
+  {
+    id: 4,
+    title: "food recipes",
+    subTitle: "Full Stack",
+    img: "images/project/food-recipes.jpeg",
+    link: "https://github.com/Mahib22/food-recipes",
+    techStack: ["laravel", "mysql", "bootstrap"],
+  },
+  {
+    id: 3,
+    title: "jerseypedia",
+    subTitle: "Full Stack",
+    img: "images/project/jerseypedia.jpeg",
+    link: "https://github.com/Mahib22/jerseypedia",
+    techStack: ["laravel", "mysql", "bootstrap"],
+  },
+  {
+    id: 2,
+    title: "sapa desa",
+    subTitle: "Full Stack",
+    img: "images/project/sapadesa.jpeg",
+    link: "https://github.com/Mahib22/sapa_desa",
+    techStack: ["flutter", "php", "mysql"],
+  },
+  {
+    id: 1,
+    title: "epl app",
+    subTitle: "Front End",
+    img: "images/project/epl-app.jpeg",
+    link: "https://epl-app-6a0bd.firebaseapp.com/",
+    techStack: ["javascript", "materialize"],
+  },
+];
+
+export default getPortfolios;

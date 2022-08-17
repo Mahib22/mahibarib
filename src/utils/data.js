@@ -9,7 +9,7 @@ const getIdentity = () => ({
     "Freelance Programmer",
   ],
   descriptionText:
-    "I am currently a student of informatics engineering at Indraprasta University, PGRI. I have a passion in programming, I'm always on the lookout for new challenges and opportunities to further improve my knowledge and skills. I love coding websites and mobile. I have 3+ years experiences in the web development with Laravel Framework.",
+    "I am currently a student of informatics engineering at Indraprasta University, PGRI. I have a passion in programming, I'm always on the lookout for new challenges and opportunities to further improve my knowledge and skills. I love coding websites and mobile. I have 2+ years experiences in the web development with Laravel Framework.",
   contactText:
     "I am currently looking for a freelance or part time job. If you see me as a good fit, feel free to contact me. Let's work together!",
   socialLink: {
@@ -22,29 +22,4 @@ const getIdentity = () => ({
   },
 });
 
-const getIcon = () => ({
-  languages: [
-    {
-      title: "html",
-      link: "images/icon/html.svg",
-    },
-    {
-      title: "css",
-      link: "images/icon/css.svg",
-    },
-    {
-      title: "javascript",
-      link: "images/icon/javascript.svg",
-    },
-    {
-      title: "php",
-      link: "images/icon/php.svg",
-    },
-    {
-      title: "dart",
-      link: "images/icon/dart.svg",
-    },
-  ],
-});
-
-export { getMenu, getIdentity, getIcon };
+export { getMenu, getIdentity };

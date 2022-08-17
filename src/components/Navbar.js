@@ -47,7 +47,12 @@ export default function Navbar({ menus }) {
       >
         <div className="flex flex-col capitalize text-base dark:text-white w-screen">
           {menus.map((menu) => (
-            <ResponsiveNavItem key={menu} menu={menu} />
+            <ResponsiveNavItem
+              key={menu}
+              menu={menu}
+              setNavbarOpen={setNavbarOpen}
+              navbarOpen={navbarOpen}
+            />
           ))}
         </div>
       </div>

@@ -1,23 +1,18 @@
 import React from "react";
+import SkillItem from "../section/SkillItem";
 import TitleSection from "../section/TitleSection";
 
 export default function Skills({ getSkills }) {
   return (
-    <section className="container px-5 py-8 mx-auto">
+    <section className="container px-5 pt-8 mx-auto">
       <TitleSection title="Languages" />
-      <div className="md:w-2/3 mx-auto flex flex-wrap justify-center gap-6 mb-12">
-        {getSkills.languages.map((getSkill) => (
-          <img
-            src={getSkill.link}
-            alt={getSkill.title}
-            key={getSkill.title}
-            className="h-12"
-          />
-        ))}
-      </div>
+      <SkillItem skill={getSkills.languages} />
 
       <TitleSection title="Frameworks and Libraries" />
+      <SkillItem skill={getSkills.frameworks} />
+
       <TitleSection title="Tools" />
+      <SkillItem skill={getSkills.tools} />
     </section>
   );
 }
