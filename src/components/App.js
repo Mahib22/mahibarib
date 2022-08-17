@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
-import { getMenu, getIdentity } from "../utils/data";
+import { getMenu, getIdentity, getIcon } from "../utils/data";
 import Home from "./pages/Home";
 import Footer from "./Footer";
 import Projects from "./pages/Projects";
@@ -15,6 +15,7 @@ class App extends Component {
     this.state = {
       menus: getMenu(),
       identity: getIdentity(),
+      getSkills: getIcon(),
     };
   }
 
@@ -24,7 +25,10 @@ class App extends Component {
         <Navbar menus={this.state.menus} />
         <Routes>
           <Route path="/" element={<Home identity={this.state.identity} />} />
-          <Route path="skills" element={<Skills />} />
+          <Route
+            path="skills"
+            element={<Skills getSkills={this.state.getSkills} />}
+          />
           <Route path="projects" element={<Projects />} />
           <Route
             path="contact"

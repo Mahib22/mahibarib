@@ -1,6 +1,6 @@
 import React from "react";
 import microtip from "microtip/microtip.css";
-import TitleSection from "../TitleSection";
+import TitleSection from "../section/TitleSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faLaravel } from "@fortawesome/free-brands-svg-icons";

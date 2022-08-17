@@ -1,7 +1,6 @@
 import React from "react";
 import "animate.css";
 import TypeWriterEffect from "react-typewriter-effect";
-import MyImg from "../../images/mahib.jpg";
 
 export default function Home({ identity }) {
   return (
@@ -9,7 +8,7 @@ export default function Home({ identity }) {
       <img
         className="mb-6 object-cover object-top rounded-full h-40 w-40"
         alt="mahib"
-        src={MyImg}
+        src={identity.image}
       />
 
       <div className="flex flex-col text-center w-full">

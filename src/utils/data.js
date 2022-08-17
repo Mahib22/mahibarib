@@ -1,6 +1,7 @@
 const getMenu = () => ["skills", "projects", "contact"];
 
 const getIdentity = () => ({
+  image: "images/mahib.jpg",
   welcomeText: "Hi! I'm Muhammad Mahib Arib",
   typeWriterText: [
     "Web Programmer",
@@ -21,4 +22,29 @@ const getIdentity = () => ({
   },
 });
 
-export { getMenu, getIdentity };
+const getIcon = () => ({
+  languages: [
+    {
+      title: "html",
+      link: "images/icon/html.svg",
+    },
+    {
+      title: "css",
+      link: "images/icon/css.svg",
+    },
+    {
+      title: "javascript",
+      link: "images/icon/javascript.svg",
+    },
+    {
+      title: "php",
+      link: "images/icon/php.svg",
+    },
+    {
+      title: "dart",
+      link: "images/icon/dart.svg",
+    },
+  ],
+});
+
+export { getMenu, getIdentity, getIcon };

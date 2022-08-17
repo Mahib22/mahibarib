@@ -1,5 +1,4 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCloudArrowDown,
   faEnvelope,
@@ -10,6 +9,8 @@ import {
   faLinkedinIn,
   faMedium,
 } from "@fortawesome/free-brands-svg-icons";
+import SocialIcon from "../section/SocialIcon";
+import ContactItem from "../section/ContactItem";
 
 export default function Contact({ identity }) {
   return (
@@ -20,24 +21,16 @@ export default function Contact({ identity }) {
         </p>
 
         <div className="lg:inline-flex lg:items-center gap-2 mt-2">
-          <a
-            href={"mailto:" + identity.socialLink.mail}
-            className="inline-flex items-center bg-slate-200 dark:bg-slate-600 dark:text-slate-300 text-slate-800 hover:bg-sky-200 dark:hover:bg-sky-700 px-4 py-1 rounded-full mt-2"
-          >
-            <FontAwesomeIcon icon={faEnvelope} size="lg" className="mr-2" />
-            <p className="text-xl font-bold">{identity.socialLink.mail}</p>
-          </a>
-          <a
-            href={identity.socialLink.resume}
-            className="inline-flex items-center bg-slate-200 dark:bg-slate-600 dark:text-slate-300 text-slate-800 hover:bg-sky-200 dark:hover:bg-sky-700 px-4 py-1 rounded-full mt-2"
-          >
-            <FontAwesomeIcon
-              icon={faCloudArrowDown}
-              size="lg"
-              className="mr-2"
-            />
-            <p className="text-xl font-bold">Download CV</p>
-          </a>
+          <ContactItem
+            link={"mailto:" + identity.socialLink.mail}
+            icon={faEnvelope}
+            text={identity.socialLink.mail}
+          />
+          <ContactItem
+            link={identity.socialLink.resume}
+            icon={faCloudArrowDown}
+            text="Download CV"
+          />
         </div>
 
         <p className="mt-12 dark:text-slate-300 text-slate-800 text-lg font-bold">
@@ -45,38 +38,10 @@ export default function Contact({ identity }) {
         </p>
 
         <div className="flex justify-around mt-2 mx-auto dark:text-white md:w-1/3">
-          <a
-            href={identity.socialLink.github}
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="hover:text-sky-700"
-          >
-            <FontAwesomeIcon icon={faGithub} size="2xl" />
-          </a>
-          <a
-            href={identity.socialLink.linkedin}
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="hover:text-sky-700"
-          >
-            <FontAwesomeIcon icon={faLinkedinIn} size="2xl" />
-          </a>
-          <a
-            href={identity.socialLink.medium}
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="hover:text-sky-700"
-          >
-            <FontAwesomeIcon icon={faMedium} size="2xl" />
-          </a>
-          <a
-            href={identity.socialLink.devto}
-            target={"_blank"}
-            rel="noopener noreferrer"
-            className="hover:text-sky-700"
-          >
-            <FontAwesomeIcon icon={faDev} size="2xl" />
-          </a>
+          <SocialIcon link={identity.socialLink.github} icon={faGithub} />
+          <SocialIcon link={identity.socialLink.linkedin} icon={faLinkedinIn} />
+          <SocialIcon link={identity.socialLink.medium} icon={faMedium} />
+          <SocialIcon link={identity.socialLink.devto} icon={faDev} />
         </div>
       </div>
     </section>

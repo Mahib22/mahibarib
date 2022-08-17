@@ -3,7 +3,7 @@ import { RoughNotation } from "react-rough-notation";
 
 export default function TitleSection({ title }) {
   return (
-    <div className="text-center text-slate-600 dark:text-slate-500 text-2xl mb-6">
+    <div className="text-center text-slate-600 dark:text-slate-500 text-lg md:text-2xl mb-6">
       <RoughNotation
         type="highlight"
         show={true}
