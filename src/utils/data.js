@@ -14,7 +14,8 @@ const getIdentity = () => ({
     "I am currently looking for a freelance or part time job. If you see me as a good fit, feel free to contact me. Let's work together!",
   socialLink: {
     mail: "mahib.arib@gmail.com",
-    resume: "#a",
+    resume:
+      "https://drive.google.com/file/d/1hdHTq8LuBpQ1l0dcahIquj7sk7GzmyhY/view?usp=sharing",
     github: "https://github.com/Mahib22",
     linkedin: "https://www.linkedin.com/in/mahib-arib",
     medium: "https://mahib-arib.medium.com",

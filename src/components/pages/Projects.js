@@ -1,6 +1,5 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-import microtip from "microtip/microtip.css";
+import "microtip/microtip.css";
 import TitleSection from "../section/TitleSection";
 import PortfolioItem from "../section/PortfolioItem";
 
