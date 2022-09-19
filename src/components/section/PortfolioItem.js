@@ -25,12 +25,18 @@ export default function PortfolioItem({
 
           <div className="flex justify-between items-center">
             <div>
-              <a
-                href={link}
-                className="text-white bg-indigo-500 px-2 rounded-md inline-flex items-center"
-              >
-                Preview
-              </a>
+              {link ? (
+                <a
+                  href={link}
+                  target={"_blank"}
+                  rel="noopener noreferrer"
+                  className="text-white bg-indigo-500 px-2 rounded-md inline-flex items-center"
+                >
+                  Preview
+                </a>
+              ) : (
+                <p></p>
+              )}
             </div>
 
             <div className="inline-flex items-center gap-4">

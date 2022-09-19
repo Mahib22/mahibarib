@@ -1,6 +1,6 @@
 const getPortfolios = () => [
   {
-    id: 7,
+    id: 9,
     title: "image gallery",
     subTitle: "Front End",
     img: "images/project/image-gallery.png",
@@ -8,7 +8,7 @@ const getPortfolios = () => [
     techStack: ["react", "tailwind"],
   },
   {
-    id: 6,
+    id: 8,
     title: "notes app",
     subTitle: "Front End",
     img: "images/project/notes-app.png",
@@ -16,7 +16,7 @@ const getPortfolios = () => [
     techStack: ["react", "tailwind"],
   },
   {
-    id: 5,
+    id: 7,
     title: "instamini",
     subTitle: "Full Stack",
     img: "images/project/instamini.png",
@@ -24,7 +24,7 @@ const getPortfolios = () => [
     techStack: ["laravel", "mysql", "bootstrap"],
   },
   {
-    id: 4,
+    id: 6,
     title: "food recipes",
     subTitle: "Full Stack",
     img: "images/project/food-recipes.jpeg",
@@ -32,7 +32,7 @@ const getPortfolios = () => [
     techStack: ["laravel", "mysql", "bootstrap"],
   },
   {
-    id: 3,
+    id: 5,
     title: "jerseypedia",
     subTitle: "Full Stack",
     img: "images/project/jerseypedia.jpeg",
@@ -40,7 +40,7 @@ const getPortfolios = () => [
     techStack: ["laravel", "mysql", "bootstrap"],
   },
   {
-    id: 2,
+    id: 4,
     title: "sapa desa",
     subTitle: "Full Stack",
     img: "images/project/sapadesa.jpeg",
@@ -48,12 +48,27 @@ const getPortfolios = () => [
     techStack: ["flutter", "php", "mysql"],
   },
   {
-    id: 1,
+    id: 3,
+    title: "indomovie",
+    subTitle: "Front End",
+    img: "images/project/indomovie.png",
+    link: "https://github.com/Mahib22/movie_apps",
+    techStack: ["flutter"],
+  },
+  {
+    id: 2,
     title: "epl app",
     subTitle: "Front End",
     img: "images/project/epl-app.jpeg",
     link: "https://epl-app-6a0bd.firebaseapp.com/",
     techStack: ["javascript", "materialize"],
+  },
+  {
+    id: 1,
+    title: "siap morin",
+    subTitle: "Back End",
+    img: "images/project/siap-morin.png",
+    techStack: ["laravel", "mysql"],
   },
 ];
 

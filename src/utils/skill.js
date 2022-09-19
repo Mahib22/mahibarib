@@ -16,10 +16,6 @@ const getSkillIcon = () => ({
       title: "php",
       link: "images/icon/php.svg",
     },
-    {
-      title: "dart",
-      link: "images/icon/dart.svg",
-    },
   ],
   frameworks: [
     {
@@ -35,12 +31,12 @@ const getSkillIcon = () => ({
       link: "images/icon/materialize.svg",
     },
     {
-      title: "bulma",
-      link: "images/icon/bulma.svg",
-    },
-    {
       title: "laravel",
       link: "images/icon/laravel.svg",
+    },
+    {
+      title: "vue",
+      link: "images/icon/vuejs.svg",
     },
     {
       title: "react",
@@ -87,10 +83,6 @@ const getSkillIcon = () => ({
     {
       title: "netlify",
       link: "images/icon/netlify.svg",
-    },
-    {
-      title: "heroku",
-      link: "images/icon/heroku.svg",
     },
   ],
 });

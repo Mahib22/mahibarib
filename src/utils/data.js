@@ -1,4 +1,4 @@
-const getMenu = () => ["skills", "projects", "contact"];
+const getMenu = () => ["home", "skills", "projects", "contact"];
 
 const getIdentity = () => ({
   image: "images/mahib.jpg",

@@ -29,6 +29,10 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<Home identity={this.state.identity} />} />
           <Route
+            path="home"
+            element={<Home identity={this.state.identity} />}
+          />
+          <Route
             path="skills"
             element={<Skills getSkills={this.state.getSkills} />}
           />
