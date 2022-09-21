@@ -15,7 +15,7 @@ const getIdentity = () => ({
   socialLink: {
     mail: "mahib.arib@gmail.com",
     resume:
-      "https://drive.google.com/file/d/1hdHTq8LuBpQ1l0dcahIquj7sk7GzmyhY/view?usp=sharing",
+      "https://drive.google.com/file/d/1IeeV3BqTCYm97C5Je9zWql5FL6gtntCw/view?usp=sharing",
     github: "https://github.com/Mahib22",
     linkedin: "https://www.linkedin.com/in/mahib-arib",
     medium: "https://mahib-arib.medium.com",
