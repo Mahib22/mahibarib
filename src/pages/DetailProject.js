@@ -62,17 +62,16 @@ export default function DetailProject({ projects }) {
           {data.description}
         </p>
 
-        <p className="pt-4 2xl:pt-6 text-sm 2xl:text-xl">
-          Link Demo :
+        {data.link && (
           <a
             href={data.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sky-500"
+            className="text-sky-500 pt-4 2xl:pt-6 text-sm 2xl:text-xl"
           >
-            {` ${data.link}`}
+            Lihat Website
           </a>
-        </p>
+        )}
 
         <div className="py-4 2xl:py-6 flex flex-wrap gap-2">
           {data.tech.map((item, id) => (

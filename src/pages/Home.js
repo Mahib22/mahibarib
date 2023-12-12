@@ -28,10 +28,15 @@ export default function Home() {
           </p>
 
           <div className="flex lg:flex-row flex-col gap-4 lg:mb-8">
-            <button className="flex items-center justify-center gap-2 bg-sky-500 border-0 py-2 2xl:py-3 px-6 2xl:px-8 text-white hover:bg-sky-600 rounded font-medium 2xl:text-xl">
+            <a
+              href="mailto:mahib.arib@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 bg-sky-500 border-0 py-2 2xl:py-3 px-6 2xl:px-8 text-white hover:bg-sky-600 rounded font-medium 2xl:text-xl"
+            >
               <FontAwesomeIcon icon={faEnvelope} />
               Hubungi Saya
-            </button>
+            </a>
             <Link
               to="portofolio"
               className="py-2 2xl:py-3 px-6 2xl:px-8 2xl:text-xl rounded border-sky-500 border-2 flex items-center justify-center gap-2 font-medium"
