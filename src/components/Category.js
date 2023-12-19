@@ -4,7 +4,6 @@ export default function Category() {
   const menus = [
     { title: "All" },
     { title: "Front End", slug: "front-end" },
-    { title: "Back End", slug: "back-end" },
     { title: "Full Stack", slug: "full-stack" },
   ];
 

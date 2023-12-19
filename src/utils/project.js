@@ -1,6 +1,6 @@
 const getProjects = () => [
   {
-    id: 1,
+    id: 5,
     category: "front-end",
     title: "Notes Apps",
     slug: "notes-apps",
@@ -18,7 +18,7 @@ const getProjects = () => [
   },
 
   {
-    id: 2,
+    id: 6,
     category: "front-end",
     title: "Image Gallery",
     slug: "image-gallery",
@@ -36,7 +36,7 @@ const getProjects = () => [
   },
 
   {
-    id: 3,
+    id: 8,
     category: "front-end",
     title: "Teti Residence",
     slug: "teti-residence",
@@ -56,7 +56,7 @@ const getProjects = () => [
   },
 
   {
-    id: 4,
+    id: 9,
     category: "front-end",
     title: "Ecommerce Catalog",
     slug: "ecommerce-catalog",
@@ -70,6 +70,92 @@ const getProjects = () => [
       "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/ecommerce-catalog%2F3579bf6b-c6ad-48b9-bc7e-a6ce0789ab66.png?alt=media&token=d6bb389a-1a0d-4f8f-b180-4fef812ad592",
       "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/ecommerce-catalog%2F20b628df-8253-4c58-8580-2f5f6b90b817.png?alt=media&token=ae297d39-9d5f-477f-942e-3b1828c0d027",
       "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/ecommerce-catalog%2F969ed8c4-af8f-4afb-985d-36b38f41d057.png?alt=media&token=b888e183-4e59-4114-b625-e59e91be1268",
+    ],
+  },
+
+  {
+    id: 1,
+    category: "front-end",
+    title: "Yaum",
+    slug: "yaum",
+    description:
+      "Merupakan web donasi yang dibuat menggunakan CodeIgniter dan Bootstrap.",
+    tech: ["CodeIgniter", "Bootstrap"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/yaum%2Fimage2.jpeg?alt=media&token=300434de-0e6a-48ec-9008-6f7c8669683d",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/yaum%2Fimage4.jpeg?alt=media&token=01626dc9-4041-4439-8e7e-fbb7a7189832",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/yaum%2Fimage3.jpeg?alt=media&token=110b6bed-ae5d-4286-8627-149bdd847a42",
+    ],
+  },
+
+  {
+    id: 7,
+    category: "full-stack",
+    title: "Siperpus",
+    slug: "siperpus",
+    description:
+      "Website yang dibuat untuk mendata buku dan meminjam buku pada perpustakaan. Dibuat menggunakan Laravel, Tailwind dan database MySql.",
+    tech: ["Laravel", "Tailwind", "MySql"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/siperpus%2Fimage3.jpeg?alt=media&token=ea54c988-48ab-4e78-a00a-b84e8726ca42",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/siperpus%2F2cfd666f-13d5-437a-b05e-c986fe63ce77.png?alt=media&token=0ab46ffc-da1c-4d7f-a26d-0c332f611a05",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/siperpus%2F3afe8b5c-5e7c-4599-873a-8a6ddc71cb50.png?alt=media&token=ea4479ac-fcbf-4db4-8af6-5690ecb49f01",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/siperpus%2F614c774c-eef2-4c85-b3d6-65d9adb4e4c4.png?alt=media&token=be03db69-a95b-471a-8a7b-7fbbadcc9530",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/siperpus%2F87c53421-7740-4756-9452-4c9bfe6d5a08.png?alt=media&token=8cb45191-381d-4ea7-9514-20b32756d55c",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/siperpus%2Fbf98921e-526d-4473-bd60-56df2cfdb87f.png?alt=media&token=9021c9c0-229d-4b61-94d3-70298f52a51c",
+    ],
+  },
+
+  {
+    id: 2,
+    category: "full-stack",
+    title: "Jerseypedia",
+    slug: "jerseypedia",
+    description:
+      "Website ecommerce penjualan jersey bola yang dibuat menggunakan Laravel Livewire, Bootstrap, dan database MySql. Terdapat fitur keranjang, wishlist produk, dan riwayat transaksi.",
+    tech: ["Laravel", "Livewire", "Bootstrap", "MySql"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/jerseypedia%2Fimage.jpeg?alt=media&token=081a911d-8197-4c01-923e-b52b14a21f11",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/jerseypedia%2Fimage2.jpeg?alt=media&token=c9ccaf41-e380-4e6b-8e6b-00b911b2d259",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/jerseypedia%2Fimage5.jpeg?alt=media&token=2ab4dd87-e8a9-4b24-aed8-b5c6ad66dee7",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/jerseypedia%2Fimage1.jpeg?alt=media&token=ae53735f-a548-4865-8ad4-8ace631bceee",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/jerseypedia%2Faaede225-62ef-4fad-9b75-cbaf888696ee.png?alt=media&token=946eaa8d-28bf-4b9a-91b8-9a83d0226cfd",
+    ],
+  },
+
+  {
+    id: 3,
+    category: "full-stack",
+    title: "Instamini",
+    slug: "instamini",
+    description:
+      "Instamini merupakan website sosial media seperti Instagram yang dibuat menggunakan Laravel, Bootstrap, dan database MySql.",
+    tech: ["Laravel", "Bootstrap", "MySql"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/instamini%2Fimage4.jpeg?alt=media&token=068a9c19-b00d-452c-9e69-0302d9bc9c2a",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/instamini%2Fimage1.jpeg?alt=media&token=68e637cc-f221-42d7-9140-4184341cabd4",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/instamini%2Fimage7.jpeg?alt=media&token=bdf2db8c-5465-4ec2-b2df-e813a47add5c",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/instamini%2Fb6612fe6-b5db-4eef-a1c0-858d97448f63.png?alt=media&token=e547ecf7-34f6-4291-98dd-9fa51112d4e9",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/instamini%2Fa9e60411-23ff-4e4b-a5a3-a4703dcc25bc.png?alt=media&token=f340933d-b9b3-4192-8615-da19adc912a7",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/instamini%2F64128732-3fda-49f8-9540-fd451eb252ed.png?alt=media&token=b83a37da-83d3-403e-8ea7-f416b8709f37",
+    ],
+  },
+
+  {
+    id: 4,
+    category: "full-stack",
+    title: "Food Recipes",
+    slug: "food-recipes",
+    description:
+      "Website untuk berbagi resep makanan menggunakan Laravel, Bootstrap, dan database MySql. Terdapat fitur membuat postingan resep masakan dan like postingan resep masakan.",
+    tech: ["Laravel", "Bootstrap", "MySql"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/food-recipes%2Fimage.jpeg?alt=media&token=0b2ec719-5779-4395-b23b-50da4f3a1f65",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/food-recipes%2Fimage1.jpeg?alt=media&token=9af30e91-8b08-4c81-bed3-225f92e086bf",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/food-recipes%2Fimage6.jpeg?alt=media&token=0a46c9a9-ec90-4433-9e9e-937b6ca4f8d3",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/food-recipes%2F9988707b-3654-4908-ae48-b97998e58fdd.png?alt=media&token=c13243ac-b35b-47db-a7f7-57564a4d3914",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/food-recipes%2Fc8342a5b-749a-44b6-9d29-eb7ee28070a3.png?alt=media&token=ee6e0130-f860-408c-94b8-4fc6f095aae7",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/food-recipes%2F9c942928-5692-4e7f-b1e9-0f7c938e6060.png?alt=media&token=a25e240e-a1f6-4cc6-8e61-45b3f6f22208",
     ],
   },
 ];
