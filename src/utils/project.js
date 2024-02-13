@@ -158,6 +158,25 @@ const getProjects = () => [
       "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/food-recipes%2F9c942928-5692-4e7f-b1e9-0f7c938e6060.png?alt=media&token=a25e240e-a1f6-4cc6-8e61-45b3f6f22208",
     ],
   },
+
+  {
+    id: 10,
+    category: "front-end",
+    title: "Mealapp",
+    slug: "mealapp",
+    description:
+      "Website berisi kumpulan resep makanan yang mengambil data dari themealdb API. Web ini dibuat menggunakan Next JS dan Tailwind. Anda dapat mencari resep makanan berdasarkan kategori, bahan dasar, dan daerah asal makanan tersebut. Anda juga dapat mencari makanan yang diinginkan melalui fitur search.",
+    link: "https://next-mealapp.vercel.app/",
+    tech: ["Next", "Tailwind", "API"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/next-mealapp%2Fimage1.jpeg?alt=media&token=39f61642-f7c3-42a4-906e-b8c0c47def8d",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/next-mealapp%2Fimage2.jpeg?alt=media&token=1c408e98-fdbe-43b2-991d-67fd4fbb00e8",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/next-mealapp%2F3ef91fdd-b7d3-4efa-9602-be8f3309255f.png?alt=media&token=7f3994cf-d399-4180-ba31-126a2e7882d6",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/next-mealapp%2Fe1512ff2-8992-4e14-87e1-b01113d89175.png?alt=media&token=1b319f38-9cc8-4087-8d93-255862cb3d5b",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/next-mealapp%2F45177b11-626c-4a92-939d-4e2bfc176162.png?alt=media&token=f53b720f-4c08-456a-b940-cd9dd43d0cf3",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/next-mealapp%2F8e5417d4-6bb3-4d68-b315-9daff71d7e88.png?alt=media&token=9403d8a1-5fd7-4228-b59f-9805b769d3ec",
+    ],
+  },
 ];
 
 export default getProjects;
