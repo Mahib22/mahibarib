@@ -177,6 +177,38 @@ const getProjects = () => [
       "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/next-mealapp%2F8e5417d4-6bb3-4d68-b315-9daff71d7e88.png?alt=media&token=9403d8a1-5fd7-4228-b59f-9805b769d3ec",
     ],
   },
+
+  {
+    id: 11,
+    category: "front-end",
+    title: "Library SEAMEO RECFON",
+    slug: "library-seameo-recfon",
+    description:
+      "Website perpustakaan yang dimiliki oleh SEAMEO RECFON yang berisi berbagai macam buku, makalah, dan juga jurnal yang diterbitkan oleh SEAMEO RECFON. Pengunjung pada website tersebut dapat mencari, membaca, maupun mengunduh buku, makalah, atau jurnal yang diinginkan. Website ini dibuat menggunakan Sistem Manajemen Perpustakaan SENAYAN (SLiMS). SLiMS adalah perangkat lunak open source gratis untuk pengelolaan sumber daya perpustakaan berbasis PHP.",
+    link: "https://library.seameo-recfon.org/",
+    tech: ["PHP", "Tailwind", "Bootstrap"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/library-recfon%2Flibrary2.jpeg?alt=media&token=2fc65d0d-9398-487a-b592-3d8a8c6ab082",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/library-recfon%2Flibrary1.jpeg?alt=media&token=dbb53847-b46e-4ff1-a75d-dbf0fb621837",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/library-recfon%2Flibrary3.jpeg?alt=media&token=dfd73abc-0e6f-4cdb-afaf-425e429b4d04",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/library-recfon%2Fda01d600-0b9d-4477-aab9-1239dd2f6fc9.png?alt=media&token=c1168ea0-2913-4164-a657-db3e48baac9a",
+    ],
+  },
+
+  {
+    id: 12,
+    category: "full-stack",
+    title: "Serenity",
+    slug: "serenity",
+    description:
+      "Website yang berfungsi sebagai sistem informasi Basis Data Terpadu Program Training Bidang Pangan dan Gizi pada SEAMEO RECFON. Website ini dibuat menggunakan Laravel, Inertia, React, Tailwind dan database MySQL.",
+    tech: ["Laravel", "Tailwind", "React", "MySQL"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/serenity%2Fserenity2.jpeg?alt=media&token=b0bf08a7-518c-4072-827b-4e3f4a786fb9",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/serenity%2Fserenity1.jpeg?alt=media&token=4022af4a-8525-49db-803b-4ec22e042db3",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/serenity%2Fserenity3.jpeg?alt=media&token=e347b2d0-9868-41ed-ba93-4c8c6ef864ec",
+    ],
+  },
 ];
 
 export default getProjects;
