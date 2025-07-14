@@ -209,6 +209,35 @@ const getProjects = () => [
       "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/serenity%2Fserenity3.jpeg?alt=media&token=e347b2d0-9868-41ed-ba93-4c8c6ef864ec",
     ],
   },
+
+  {
+    id: 13,
+    category: "front-end",
+    title: "1 Park Homes",
+    slug: "1park-homes",
+    description:
+      "1 Park Homes adalah proyek townhouse super‑mewah dari PT Intiland Development Tbk di kawasan Gandaria, Jakarta Selatan. Proyek ini menawarkan hunian yang nyaman dan modern dengan berbagai fasilitas yang lengkap. Website ini dibuat menggunakan Next JS, dan Tailwind",
+    link: "https://1park-home.com/",
+    tech: ["Next", "Tailwind"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/1parkhomes%2Fimage2.jpeg?alt=media&token=99b43240-e4d7-4ce1-93e4-a2f2c5e063ba",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/1parkhomes%2Fimage1.jpeg?alt=media&token=e4023362-def9-492b-9ef4-69e1be224b3a",
+    ],
+  },
+
+  {
+    id: 14,
+    category: "full-stack",
+    title: "Laravel Absensi",
+    slug: "laravel-absensi",
+    description:
+      "Membangun sistem absensi berbasis web dengan fitur face recognition menggunakan Python + DeepFace untuk deteksi wajah dan verifikasi identitas. Backend dikembangkan menggunakan Laravel, dengan React (via Inertia.js) sebagai frontend framework.",
+    tech: ["Laravel", "Tailwind", "React", "Python"],
+    img: [
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/face-recognition%2Fimage2.jpeg?alt=media&token=a795e54f-382f-4852-ad53-f653384e15d9",
+      "https://firebasestorage.googleapis.com/v0/b/be-portofolio.appspot.com/o/face-recognition%2Fimage1.jpeg?alt=media&token=bb853d55-82d3-48b7-b293-5f40aecd9f0d",
+    ],
+  },
 ];
 
 export default getProjects;
